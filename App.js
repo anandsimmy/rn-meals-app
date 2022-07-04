@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Meals App</Text>
-      <StatusBar />
+      <StatusBar style='auto' />
     </View>
   );
 }
