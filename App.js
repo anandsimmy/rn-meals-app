@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import CategoriesScreen from './Screens/CategoriesScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Meals App</Text>
-      <StatusBar style='auto' />
+      <CategoriesScreen />
     </View>
   );
 }
@@ -13,8 +13,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
   },
 });
