@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, StatusBar, Platform, SafeAreaView } from 'react-native';
 import CategoriesScreen from './Screens/CategoriesScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <CategoriesScreen />
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -16,5 +16,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: '#fff',
     alignItems: 'flex-start',
+    paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
   },
 });
