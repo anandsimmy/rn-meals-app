@@ -4,9 +4,9 @@ import CategoriesScreen from './Screens/CategoriesScreen';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <CategoriesScreen />
-    </SafeAreaView>
+    </View>
   );
 }
 
