@@ -8,7 +8,5 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  foodText: {
-    fontWeight: '500',
-  },
+  foodText: {},
 });
